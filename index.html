@@ -21,98 +21,459 @@
                     <h1>Cepte<span>Şef</span></h1>
                 </div>
                 <h2 class="headline">Şantiyenin <span>Premium</span> Asistanı</h2>
-                <p class="sub-headline">Lüks arayüz, anlık piyasa verileri ve güçlü yapay zeka desteği ile inşaat
-                    yönetimi artık cebinizde.</p>
-
+                <p class="sub-headline">İnşaat yönetiminde lüks deneyim. Tüm modüller tek uygulamada.</p>
                 <div class="cta-group">
                     <a href="#" class="btn btn-gold"><i class="fa-brands fa-apple"></i> App Store</a>
                     <a href="#" class="btn btn-outline"><i class="fa-brands fa-google-play"></i> Google Play</a>
                 </div>
             </div>
-
             <div class="hero-visual">
-                <!-- TELEPHONE MOCKUP FRAME -->
                 <div class="phone-mockup">
                     <div class="notch"></div>
                     <div class="screen-content">
-                        <!-- HERO IMAGE -->
-                        <img src="assets/hero_screen.png" alt="Ana Ekran"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="assets/hero_screen.png" alt="CepteŞef Ana Ekran">
                     </div>
-                </div>
-
-                <!-- Floating Elements for visuals -->
-                <div class="floating-card card-rent">
-                    <img src="assets/showcase_image.png" alt="Kiralama">
-                    <span>Kiralama</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- FEATURES SECTION -->
-    <section class="features">
-        <div class="container grid-3">
-            <div class="feature-box">
-                <i class="fa-solid fa-layer-group"></i>
-                <h3>Native Performans</h3>
-                <p>Görüntü tabanlı değil, %100 kod ile çizilmiş vektörel grafikler ve akıcı animasyonlar.</p>
-            </div>
-            <div class="feature-box">
-                <i class="fa-solid fa-gem"></i>
-                <h3>Obsidian & Gold</h3>
-                <p>Göz yormayan lüks karanlık mod ve altın detaylarla premium deneyim.</p>
-            </div>
-            <div class="feature-box">
-                <i class="fa-solid fa-robot"></i>
-                <h3>Yapay Zeka</h3>
-                <p>Şantiye süreçlerinizi optimize eden akıllı algoritmalar ve anlık veri takibi.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALLERY SECTION -->
-    <section class="gallery">
+    <!-- INTERACTIVE SHOWCASE Tabs -->
+    <section class="app-showcase">
         <div class="container">
-            <h2 class="section-title">Uygulama <span>Görselleri</span></h2>
-            <p class="section-desc">CepteŞef'in premium arayüzünden kareler ve kullanım videoları.</p>
+            <div class="tabs-header">
+                <button class="tab-btn active" data-target="rental"><i class="fa-solid fa-truck-yellow"></i>
+                    Kiralama</button>
+                <button class="tab-btn" data-target="market"><i class="fa-solid fa-shopping-basket"></i> Market</button>
+                <button class="tab-btn" data-target="logistics"><i class="fa-solid fa-truck-fast"></i> Nakliye</button>
+                <button class="tab-btn" data-target="renovation"><i class="fa-solid fa-paint-roller"></i>
+                    Tadilat</button>
+                <button class="tab-btn" data-target="engineering"><i class="fa-solid fa-helmet-safety"></i>
+                    Teknik Ofis</button>
+                <button class="tab-btn" data-target="cost"><i class="fa-solid fa-calculator"></i>
+                    Maliyet</button>
+            </div>
 
-            <div class="gallery-grid">
-                <!-- Video 1 -->
-                <div class="media-card">
-                    <video controls playsinline loop poster="assets/showcase_image.png">
-                        <source src="assets/video1.mp4" type="video/mp4">
-                    </video>
-                    <div class="media-caption"><i class="fa-solid fa-play"></i> Ana Akış</div>
+            <div class="tab-content-wrapper">
+
+                <!-- 1. KİRALAMA -->
+                <div class="tab-pane active" id="rental">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>İş Makinesi <span>Kiralama</span></h2>
+                            <p>Projenize en yakın iş makinelerini harita üzerinde görüntüleyin. Saatlik, günlük veya
+                                aylık teklifleri karşılaştırın.</p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="app-showcase-grid">
+                            <!-- 1. Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_rental.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <!-- Image 1 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_1.jpg" alt="Kiralama 1">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_2.jpg" alt="Kiralama 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="app-showcase-grid" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_3.jpg" alt="Kiralama 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_4.jpg" alt="Kiralama 4">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_5.jpg" alt="Kiralama 5">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_rental_6.jpg" alt="Kiralama 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Foto 1 -->
-                <div class="media-card">
-                    <img src="assets/foto1.jpg" alt="Ekran Görüntüsü 1">
-                    <div class="media-caption"><i class="fa-solid fa-image"></i> Piyasa Ekranı</div>
+                <!-- 2. MARKET -->
+                <div class="tab-pane" id="market">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>Yapı <span>Market</span></h2>
+                            <p>Betondan tuğlaya, boyadan seramiğe binlerce ürün. Tedarikçilerden toplu teklif toplayın.
+                            </p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="market-showcase">
+                            <!-- 1. Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_market.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                            <!-- 2. Image 1 (Market Categories) -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_final_1.jpg" alt="Market Kategoriler">
+                                </div>
+                            </div>
+
+                            <!-- 3. Image 2 (Home/Dashboard) -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_final_2.jpg" alt="Ana Ekran">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="market-showcase" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_extra_1.jpg" alt="Market Ekstra 1">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_extra_2.jpg" alt="Market Ekstra 2">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_extra_3.jpg" alt="Market Ekstra 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_market_extra_4.jpg" alt="Market Ekstra 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Video 2 -->
-                <div class="media-card">
-                    <video controls playsinline loop poster="assets/showcase_image.png">
-                        <source src="assets/video2.mp4" type="video/mp4">
-                    </video>
-                    <div class="media-caption"><i class="fa-solid fa-play"></i> Lojistik Modülü</div>
+                <!-- 3. NAKLİYE -->
+                <div class="tab-pane" id="logistics">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>Nakliye & <span>Lojistik</span></h2>
+                            <p>Yükünüzü taşıyacak en uygun aracı bulun. Boş dönüş fırsatlarını değerlendirin.</p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="app-showcase-grid">
+                            <!-- Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_logistics.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <!-- Image 1 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_1.jpg" alt="Nakliye 1">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_2.jpg" alt="Nakliye 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="app-showcase-grid" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_3.jpg" alt="Nakliye 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_4.jpg" alt="Nakliye 4">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_5.jpg" alt="Nakliye 5">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_logistics_6.jpg" alt="Nakliye 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Foto 2 -->
-                <div class="media-card">
-                    <img src="assets/foto2.jpg" alt="Ekran Görüntüsü 2">
-                    <div class="media-caption"><i class="fa-solid fa-image"></i> Profil Detayı</div>
+                <!-- 4. TADİLAT -->
+                <div class="tab-pane" id="renovation">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>Tadilat & <span>Dekorasyon</span></h2>
+                            <p>Anahtar teslim projeleriniz için profesyonel ekipler. Yapay zeka destekli stil sihirbazı.
+                            </p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="app-showcase-grid">
+                            <!-- Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_renovation.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <!-- Image 1 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_1.jpg" alt="Tadilat 1">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_2.jpg" alt="Tadilat 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="app-showcase-grid" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_3.jpg" alt="Tadilat 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_4.jpg" alt="Tadilat 4">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_5.jpg" alt="Tadilat 5">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_renovation_6.jpg" alt="Tadilat 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 5. MÜHENDİSLİK -->
+                <div class="tab-pane" id="engineering">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>Teknik Ofis & <span>Proje</span></h2>
+                            <p>Statik, mekanik, elektrik projeleriniz için uzman mühendislerle online uzman görüşmesi.
+                            </p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="app-showcase-grid">
+                            <!-- Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_engineering.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <!-- Image 1 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_1.jpg" alt="Müh 1">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_2.jpg" alt="Müh 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="app-showcase-grid" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_3.jpg" alt="Müh 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_4.jpg" alt="Müh 4">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_5.jpg" alt="Müh 5">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_engineering_6.jpg" alt="Müh 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. MALİYET -->
+                <div class="tab-pane" id="cost">
+                    <div class="container">
+                        <!-- Top Text -->
+                        <div class="text-col" style="max-width: 100%; text-align: center; margin-bottom: 20px;">
+                            <h2>Maliyet & <span>Hesap</span></h2>
+                            <p>Proje bütçenizi yönetin, anlık maliyet analizleri yapın ve piyasa fiyatlarını sorgulayın.
+                            </p>
+                        </div>
+
+                        <!-- 3 Phones Row -->
+                        <div class="app-showcase-grid">
+                            <!-- Video -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <video autoplay muted loop playsinline poster="assets/showcase_image.png">
+                                        <source src="assets/video_cost.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <!-- Image 1 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_1.jpg" alt="Maliyet 1">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_2.jpg" alt="Maliyet 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Phones Row (Extras) -->
+                        <div class="app-showcase-grid" style="margin-top: 20px;">
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_3.jpg" alt="Maliyet 3">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_4.jpg" alt="Maliyet 4">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_5.jpg" alt="Maliyet 5">
+                                </div>
+                            </div>
+                            <div class="phone-mockup small">
+                                <div class="notch"></div>
+                                <div class="screen-content">
+                                    <img src="assets/img_cost_6.jpg" alt="Maliyet 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 CepteŞef. Tüm Hakları Saklıdır.</p>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Cepte<span>Şef</span></h3>
+                <p>İnşaatın Geleceği.</p>
+                <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
